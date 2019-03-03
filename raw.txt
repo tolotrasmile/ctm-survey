@@ -1,0 +1,65 @@
+SONDAGE EXTERNE CTmotors
+1.	Sexe :
+  	Femme
+  	Homme
+2.	Catégorie d’âge :
+  	 25-30 ans
+  	30-45 ans
+  	45-60 ans
+  	Plus de 60 ans
+3.	Nationalité
+  	Malagasy
+  	Autres, précisez :……………………………..
+4.	Connaissez-vous CTmotors ? 
+  	OUI
+  	Non
+5.	Si oui, Comment l’avez- vous connu?
+  	 Médias, précisez :
+    o	Publicité TV 
+    o	Publicité Radio 
+    o	Magazine 
+    o	Panneau publicitaire 
+    o	Insertion dans les journaux 
+    o	évènements 
+  	Réseaux sociaux, Précisez :………………..
+  	Amis  - Bouche à oreille 
+  	Autres, précisez :………………………
+
+6.	Si vous entendez ou voyez le mot CTmotors, vous pensez à quoi ?
+  ………………………………………………………………………………………………….
+  …………………………………………………………………………………………………
+7.	Savez-vous ou se place CTmotors ?
+  ………………………………………………………………..
+8.	Connaissez-vous des produits de chez CTmotors ?
+  	OUI
+  	Non
+9.	Si oui, précisez
+  	Voitures
+  	Moto
+  	Vélo
+  	Tuk tuk
+  	Buggy 
+  	SSV 
+  	Atelier entretien réparation
+  	Accessoires
+  	Autres, précisez :………………………
+ 
+10.	Quels produits vous intéressent chez CTmotors ?
+  	 Voitures
+  	Moto
+  	Vélo
+  	Tuk tuk
+  	Buggy 
+  	SSV 
+  	Accessoires
+  Précisez  la marque :……………………………………………………..
+
+11.	Avez-vous déjà achetés des produits chez CTmotors ?
+  	OUI
+  	Non
+
+12.	Si oui, lesquels ?
+  Précisez le produit et la marque :………………………………………….
+13.	SI non, pourquoi pas ?
+  ……………………………………………………………………………………………..
+Nous vous  présentons notre sincère remerciement pour votre bienveillance de vouloir répondre à notre questionnaire.

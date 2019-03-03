@@ -1,0 +1,61 @@
+[
+  {
+    "name": "sex",
+    "label": "Sexe",
+    "type": "radio-group",
+    "options": [
+      {
+        "value": "homme",
+        "label": "Homme",
+        "type": "radio"
+      },
+      {
+        "value": "femme",
+        "label": "Femme",
+        "type": "radio"
+      }
+    ]
+  },
+  {
+    "name": "age",
+    "label": "Catégorie d'age",
+    "type": "radio-group",
+    "options": [
+      {
+        "value": "1",
+        "label": "25-30 ans",
+        "type": "radio"
+      },
+      {
+        "value": "2",
+        "label": "30-45 ans",
+        "type": "radio"
+      },
+      {
+        "value": "3",
+        "label": "45-60 ans",
+        "type": "radio"
+      },
+      {
+        "value": "4",
+        "label": "Plus de 60 ans",
+        "type": "radio"
+      }
+    ]
+  },
+  {
+    "name": "name",
+    "label": "Si vous entendez ou voyez le mot CTmotors, vous pensez à quoi ?",
+    "type": "input"
+  },
+  {
+    "name": "name",
+    "label": "Votre nom complet",
+    "type": "input"
+  },
+  {
+    "name": "name",
+    "label": "Votre nom complet",
+    "type": "input"
+  }
+]
