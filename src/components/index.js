@@ -31,7 +31,7 @@ function Group({ name, divided, label, children }) {
 
   return (
     <Wrapper label={label} divided={divided}>
-      {/*JSON.stringify({ state, value })*/}
+      {JSON.stringify({ state, value })}
       <RadioGroup aria-label={name} name={name} value={state[name]} onChange={onChange}>
         {children}
       </RadioGroup>
