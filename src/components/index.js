@@ -20,13 +20,13 @@ const Wrapper = React.memo(function Wrapper({ label, children, divided }) {
   );
 });
 
-function Group({ name, divided, label, children }) {
+function Group({ name, divided, label, children, category = 'uncategorized' }) {
   const [value, setValue] = React.useState(null);
   const [state, dispatch] = React.useContext(ResultContext);
 
   function onChange(e) {
     setValue(e.target.value);
-    dispatch({ [e.target.name]: e.target.value });
+    dispatch({ [category]: { ...state[category], [e.target.name]: e.target.value } });
   }
 
   return (
