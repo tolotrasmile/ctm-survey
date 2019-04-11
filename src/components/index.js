@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
 import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
+import React, { useContext, useState } from 'react';
 import ResultContext from './ResultContext';
 
 const Wrapper = React.memo(function Wrapper({ label, children, divided }) {
@@ -21,7 +21,7 @@ const Wrapper = React.memo(function Wrapper({ label, children, divided }) {
 
 function Group({ name, divided, label, children, disabled }) {
   const [value, setValue] = useState(null);
-  const [state, dispatch] = useContext(ResultContext);
+  const [, dispatch] = useContext(ResultContext);
 
   function onChange(e) {
     setValue(e.target.value);

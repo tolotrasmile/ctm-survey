@@ -1,4 +1,4 @@
-import { FormControlLabel, Radio as Checkbox, TextField, FormLabel } from '@material-ui/core';
+import { FormControlLabel, Radio as Checkbox, TextField } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import React from 'react';
 import { buttonStyle } from '../utils/themes';
@@ -12,7 +12,6 @@ function NewVote() {
       {({ state, save }) => (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <div style={{ margin: 30, width: 480 }}>
-            <pre>{JSON.stringify(state, null, 2)}</pre>
             <div style={{ textAlign: 'center' }}>
               <img src="/img/logo-ctm.png" alt="logo" style={{ height: 100 }} />
             </div>
@@ -136,7 +135,7 @@ function NewVote() {
                 size="large"
                 onClick={save}
               >
-                Envoyer
+                Enregister
               </Button>
             </React.Suspense>
           </div>
