@@ -2,6 +2,7 @@ import React from 'react';
 import { Router, Link } from '@reach/router';
 import NewVote from './components/NewVote';
 import Table from './components/Table';
+import Chart from './components/Chart';
 import { Button, MuiThemeProvider } from '@material-ui/core';
 
 import { buttonStyle, theme } from './utils/themes';
@@ -33,6 +34,8 @@ function Home() {
           </Link>
         </div>
       </div>
+      <Table />
+      <Chart />
     </div>
   );
 }

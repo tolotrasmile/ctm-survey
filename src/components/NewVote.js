@@ -11,8 +11,8 @@ function NewVote() {
     <ResultProvider>
       {({ state, save }) => (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <pre>{JSON.stringify(state, null, 2)}</pre>
           <div style={{ margin: 30, width: 480 }}>
+            <pre>{JSON.stringify(state, null, 2)}</pre>
             <div style={{ textAlign: 'center' }}>
               <img src="/img/logo-ctm.png" alt="logo" style={{ height: 100 }} />
             </div>
