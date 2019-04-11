@@ -13,24 +13,20 @@ export const theme = createMuiTheme({
 
 export const buttonStyle = {
   boxShadow: 'none',
-  textTransform: 'none',
   fontSize: 18,
   padding: '6px 12px',
   border: '1px solid',
   lineHeight: 1.5,
-  backgroundColor: '#007bff',
-  borderColor: '#007bff',
+  backgroundColor: '#54B648',
+  borderColor: '#54B648',
   color: 'white',
   '&:hover': {
-    backgroundColor: '#0069d9',
-    borderColor: '#0062cc'
+    backgroundColor: '#32CF30',
+    borderColor: '#32CF30'
   },
   '&:active': {
     boxShadow: 'none',
-    backgroundColor: '#0062cc',
-    borderColor: '#005cbf'
-  },
-  '&:focus': {
-    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)'
+    backgroundColor: '#32CF30',
+    borderColor: '#32CF30'
   }
 };

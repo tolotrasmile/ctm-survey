@@ -1,0 +1,14 @@
+{
+  "uncategorized": {
+    "rent": { "label": "A déjà achetés des produits?", "count": 0 },
+    "rent-response": { "label": "Produits achetés" },
+    "products": { "label": "Connais des produits?", "count": 0 },
+    "products-response": { "label": "Connais des produits?", "count": 0 },
+    "idea": "",
+    "localization": ""
+  },
+  "personal-information": {
+    "sexe": "",
+    "age": 0
+  }
+}

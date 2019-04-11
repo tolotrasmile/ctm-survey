@@ -1,43 +1,50 @@
 import React from 'react';
 import { Router, Link } from '@reach/router';
 import NewVote from './components/NewVote';
+import Table from './components/Table';
+import { Button, MuiThemeProvider } from '@material-ui/core';
+
+import { buttonStyle, theme } from './utils/themes';
 
 function Home() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        flexDirection: 'column'
-      }}
-    >
-      <img src="/img/logo-ctm.png" alt="logo" style={{ height: 100, marginBottom: 20 }} />
-      <Link
-        to="/new"
+    <div>
+      <div
         style={{
-          fontFamily: 'sans-serif',
-          padding: 10,
-          backgroundColor: '#58AB27',
-          color: 'white',
-          textDecoration: 'none',
-          textTransform: 'uppercase',
-          borderRadius: 6
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '10px',
+          backgroundColor: 'white',
+          borderBottom: '1px solid #dddddd'
         }}
       >
-        Voter
-      </Link>
+        <img src="/img/logo-ctm.png" alt="logo" style={{ height: 50 }} />
+        <div>
+          <Link
+            to="/new"
+            style={{
+              textDecoration: 'none'
+            }}
+          >
+            <Button color="primary" size="large" style={buttonStyle}>
+              Voter
+            </Button>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
 
 function App() {
   return (
-    <Router>
-      <Home path="/" />
-      <NewVote path="/new" />
-    </Router>
+    <MuiThemeProvider theme={theme}>
+      <Router>
+        <Home path="/" />
+        <NewVote path="/new" />
+      </Router>
+    </MuiThemeProvider>
   );
 }
 

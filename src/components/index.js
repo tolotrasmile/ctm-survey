@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import Divider from '@material-ui/core/Divider';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import RadioGroup from '@material-ui/core/RadioGroup';
-import Divider from '@material-ui/core/Divider';
-
 import ResultContext from './ResultContext';
 
 const Wrapper = React.memo(function Wrapper({ label, children, divided }) {
@@ -20,19 +19,25 @@ const Wrapper = React.memo(function Wrapper({ label, children, divided }) {
   );
 });
 
-function Group({ name, divided, label, children, category = 'uncategorized' }) {
-  const [value, setValue] = React.useState(null);
-  const [state, dispatch] = React.useContext(ResultContext);
+function Group({ name, divided, label, children, disabled }) {
+  const [value, setValue] = useState(null);
+  const [state, dispatch] = useContext(ResultContext);
 
   function onChange(e) {
     setValue(e.target.value);
-    dispatch({ [category]: { ...state[category], [e.target.name]: e.target.value } });
+    dispatch({ [e.target.name]: e.target.value });
   }
 
   return (
     <Wrapper label={label} divided={divided}>
-      {JSON.stringify({ state, value })}
-      <RadioGroup aria-label={name} name={name} value={state[name]} onChange={onChange}>
+      {/*JSON.stringify(state, null, 2)*/}
+      <RadioGroup
+        aria-label={name}
+        name={name}
+        value={value}
+        onChange={onChange}
+        disabled={disabled}
+      >
         {children}
       </RadioGroup>
     </Wrapper>
